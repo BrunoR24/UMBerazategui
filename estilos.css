@@ -109,7 +109,7 @@ figure{
 }
 
 .bghero{
-    background-image:url('../fotos/bghero.jpg');
+    background-image:url('fotos/bghero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 0 50px;
@@ -269,11 +269,11 @@ figure{
 }
 
 .social-link.twitter{
-    background-image: url('../fotos/twitter.svg');
+    background-image: url('fotos/twitter.svg');
 }
 
 .social-link.instagram{
-    background-image: url('../fotos/instagram.svg');
+    background-image: url('fotos/instagram.svg');
 }
 
 .form-email input{
@@ -281,7 +281,7 @@ figure{
     border-style: solid;
     border-radius: 5px;
     padding: 10px 20px 10px 25px;
-    background-image: url('../fotos/envelope.svg');
+    background-image: url('fotos/envelope.svg');
     background-size: 15px 20px;
     background-repeat: no-repeat;
     background-position-y: center;
