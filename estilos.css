@@ -1,0 +1,315 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure{
+    margin: 0;
+}
+
+.header {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    margin: 0 0px;
+}
+
+.menu {
+    height: inherit;
+}
+
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+.header ol li{
+    height: inherit;
+    flex: 1;
+}
+
+.inicio-button{
+    font-family: 'Lato', Helvetica, sans-serif;
+    color:#2A8CC8;
+    font-weight: 600;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    margin: 0 50px;
+    text-transform: uppercase;
+ 
+}
+
+.miusuario-button{
+    font-family: 'Lato', Helvetica, sans-serif;
+    color:#49AC7B;
+    font-weight: 600;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    margin: 0 50px;
+    text-transform: uppercase;
+ 
+}
+
+.nosotros-button{
+    font-family: 'Lato', Helvetica, sans-serif;
+    color:#fed136;
+    font-weight: 600;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    margin: 0 50px;
+    text-transform: uppercase;
+ 
+}
+
+.foro-button{
+    font-family: 'Lato', Helvetica, sans-serif;
+    color:#524482;
+    font-weight: 600;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    margin: 0 50px;
+    text-transform: uppercase;
+
+}
+
+.archivo-button{
+    font-family: 'Lato', Helvetica, sans-serif;
+    color:#D94F42;;
+    font-weight: 600;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    margin: 0 50px;
+    text-transform: uppercase;
+}
+
+.nav-logo {
+    margin: 0 40px;
+    height: inherit;
+    display: flex;
+    width: 100px; 
+}
+
+.bghero{
+    background-image:url('../fotos/bghero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 0 50px;
+    
+}
+
+.hero{
+    color: rgba(255, 255, 255, 0.815);
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.main-title{
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 50px;
+    padding: 0 0 250px 100px;
+}
+
+.about-us{
+    background: #f4fbff;
+    margin: 0 150px;
+}
+
+.about-usContainer{
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.about-usTitle{
+    margin-bottom: 20px;
+    font-family: 'Staatliches', sans-serif;
+}
+
+.about-us-imageContainer{
+    padding: 20px 30px;
+}
+
+.news{
+    background: #f4fbff;
+    margin: 0 150px;
+}
+
+.news-maintitle{
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 0;
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+
+.news-container{
+    margin: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 80px 0;
+}
+
+.news-title{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.news-section,
+.news-date,
+.news-url{
+    margin: 10px 0;
+}
+
+.news-description{
+    font-size: 20px;
+}
+
+.news-image{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.information-title{
+    text-align: center;
+    font-family: 'Lato', Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 50px 0;
+}
+
+
+.information{
+    margin: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.organ{
+    border: 1px solid gray;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: #f4fbff;
+    margin-top: 50px;
+}
+
+.organ-textContainer{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.organ-image{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contact{
+    background-color: #2A8CC8;
+    color: white;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-link{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+
+.social{
+    margin-right: 20px;
+}
+
+.form-email{
+    margin-left: 20px;
+}
+
+.social-link.twitter{
+    background-image: url('../fotos/twitter.svg');
+}
+
+.social-link.instagram{
+    background-image: url('../fotos/instagram.svg');
+}
+
+.form-email input{
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-image: url('../fotos/envelope.svg');
+    background-size: 15px 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button{
+    display: block;
+    padding: 10px 0;
+    background: transparent;
+    color: white;
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.form-email h3{
+    font-family: 'Lato', sans-serif;
+}
+
+.footer{
+    background-color: rgb(22, 20, 20);
+    color: whitesmoke;
+    height: 40px;
+    margin: 0;
+    padding: 10px;
+}
+ .footer p{
+     margin: 0;
+     font-family: 'Lato', sans-serif;
+ }
