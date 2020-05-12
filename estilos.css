@@ -18,9 +18,12 @@ figure{
     color: black;
     display: flex;
     justify-content: space-between;
-    height: 70px;
+    height: 100px;
+    width: 100%;
+    flex: 1;
     align-items: center;
     margin: 0 0px;
+    flex-wrap: wrap;
 }
 
 .menu {
@@ -35,9 +38,10 @@ figure{
 .header ol li{
     height: inherit;
     flex: 1;
+    align-items: center;
 }
 
-.inicio-button{
+.info-button{
     font-family: 'Lato', Helvetica, sans-serif;
     color:#2A8CC8;
     font-weight: 600;
@@ -50,7 +54,7 @@ figure{
  
 }
 
-.miusuario-button{
+.noticias-button{
     font-family: 'Lato', Helvetica, sans-serif;
     color:#49AC7B;
     font-weight: 600;
@@ -65,7 +69,7 @@ figure{
 
 .nosotros-button{
     font-family: 'Lato', Helvetica, sans-serif;
-    color:#fed136;
+    color:#524482;
     font-weight: 600;
     text-decoration: none;
     height: inherit;
@@ -76,20 +80,7 @@ figure{
  
 }
 
-.foro-button{
-    font-family: 'Lato', Helvetica, sans-serif;
-    color:#524482;
-    font-weight: 600;
-    text-decoration: none;
-    height: inherit;
-    display: flex;
-    align-items: center;
-    margin: 0 50px;
-    text-transform: uppercase;
-
-}
-
-.archivo-button{
+.contacto-button{
     font-family: 'Lato', Helvetica, sans-serif;
     color:#D94F42;;
     font-weight: 600;
@@ -118,12 +109,13 @@ figure{
 
 .hero{
     color: rgba(255, 255, 255, 0.815);
-    height: 700px;
+    max-height: 700px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 0px;
     background-color: rgba(0, 0, 0, 0.6);
+    flex-wrap: wrap;
 }
 
 .main-title{
@@ -152,7 +144,9 @@ figure{
 
 .about-usTitle{
     margin-bottom: 20px;
-    font-family: 'Staatliches', sans-serif;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .about-us-imageContainer{
@@ -162,6 +156,7 @@ figure{
 .news{
     background: #f4fbff;
     margin: 0 150px;
+    flex-wrap: wrap;
 }
 
 .news-maintitle{
@@ -215,7 +210,7 @@ figure{
 .information{
     margin: 0 150px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -250,6 +245,7 @@ figure{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .social-link{
@@ -268,8 +264,8 @@ figure{
     margin-left: 20px;
 }
 
-.social-link.twitter{
-    background-image: url('fotos/twitter.svg');
+.social-link.facebook{
+    background-image: url('fotos/facebook.svg');
 }
 
 .social-link.instagram{
@@ -313,3 +309,22 @@ figure{
      margin: 0;
      font-family: 'Lato', sans-serif;
  }
+
+ @media screen and (max-width: 767px) {
+     .header {
+         height: auto;
+         display: block;
+         text-align: center;
+        }
+
+        .nav-logo{
+            display: inline;
+        }
+
+     .header li{
+         margin-bottom: 5px;
+         align-items: center;
+         text-align: center;
+         display: flex;
+     }
+    }
