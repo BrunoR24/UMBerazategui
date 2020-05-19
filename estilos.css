@@ -1,8 +1,15 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
+    height: 100%;
+     box-sizing: border-box;
 }
 
+ul,
 ol{
     margin: 0;
     padding: 0;
@@ -14,17 +21,71 @@ figure{
 }
 
 .header {
-    background-color: white;
-    color: black;
     display: flex;
-    justify-content: space-between;
-    height: 100px;
+    justify-content: center;
+    height: auto;
     width: 100%;
-    flex: 1;
     align-items: center;
     margin: 0 0px;
     flex-wrap: wrap;
+    border-bottom: 1px solid gray;
+    background-color: white;
 }
+
+/* Hero */
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    color: #CCC;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Amatic SC', sans-serif;
+    letter-spacing: 17.5px;
+  }
+  
+  .hero-one {
+    top: 0;
+    position: absolute;
+    width: 60%;
+    background-color: black;
+    height: 100vh;
+    clip-path: polygon(0 0, 60vw 0, 40vw 100vh, 0 100vh);
+    z-index: 1;
+    background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(fotos/bghero.jpg);
+      background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .hero-two {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    background-color: green;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.5)), url(fotos/imagenbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .header-title {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .header-primary {
+    font-size: 2em;
+    display: block;
+    font-weight: 700;
+  }
+
+/* hero end */
 
 .menu {
     height: inherit;
@@ -36,9 +97,9 @@ figure{
 }
 
 .header ol li{
-    height: inherit;
     flex: 1;
     align-items: center;
+    text-align: center;
 }
 
 .info-button{
@@ -47,12 +108,15 @@ figure{
     font-weight: 600;
     text-decoration: none;
     height: inherit;
-    display: flex;
     align-items: center;
     margin: 0 50px;
     text-transform: uppercase;
  
 }
+
+
+
+
 
 .noticias-button{
     font-family: 'Lato', Helvetica, sans-serif;
@@ -60,7 +124,6 @@ figure{
     font-weight: 600;
     text-decoration: none;
     height: inherit;
-    display: flex;
     align-items: center;
     margin: 0 50px;
     text-transform: uppercase;
@@ -73,7 +136,6 @@ figure{
     font-weight: 600;
     text-decoration: none;
     height: inherit;
-    display: flex;
     align-items: center;
     margin: 0 50px;
     text-transform: uppercase;
@@ -86,19 +148,30 @@ figure{
     font-weight: 600;
     text-decoration: none;
     height: inherit;
-    display: flex;
     align-items: center;
     margin: 0 50px;
     text-transform: uppercase;
 }
 
-.nav-logo {
+.nav-logo{
     margin: 0 40px;
     height: inherit;
-    display: flex;
     width: 100px; 
 }
 
+.social-logo.instagram{
+    margin: 0 40px;
+    height: 2em;
+    width: 2em; 
+}
+
+.social-logo.facebook{
+    margin: 0 40px;
+    height: 2em;
+    width: 2em; 
+}
+
+/*
 .bghero{
     background-image:url('fotos/bghero.jpg');
     background-repeat: no-repeat;
@@ -117,7 +190,7 @@ figure{
     background-color: rgba(0, 0, 0, 0.6);
     flex-wrap: wrap;
 }
-
+*/
 .main-title{
     font-family: 'Lato', Helvetica, sans-serif;
     font-size: 50px;
@@ -153,39 +226,34 @@ figure{
     padding: 20px 30px;
 }
 
-.news{
-    background: #f4fbff;
-    margin: 0 150px;
-    flex-wrap: wrap;
-}
-
 .news-maintitle{
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
     margin-top: 80px;
-    margin-right: 150px;
-    margin-left: 150px;
-    margin-bottom: 0;
+    margin-bottom: 50px;
     font-family: 'Lato', Helvetica, sans-serif;
 }
 
 .news-container{
-    margin: 0 150px;
+    margin: 0 10px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
     padding: 0 0 80px 0;
+    flex-wrap: wrap;
 }
 
 .news-title{
     font-weight: 600;
     font-size: 30px;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .news-section,
 .news-date,
 .news-url{
     margin: 10px 0;
+
 }
 
 .news-description{
@@ -193,9 +261,17 @@ figure{
 }
 
 .news-image{
-    width: 400px;
-    height: 200px;
-    object-fit: cover;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.news-imageContainer{
+    width: auto;
+    text-align: center;
+}
+
+.news-details{
+    width: 50%;
 }
 
 .information-title{
@@ -208,7 +284,6 @@ figure{
 
 
 .information{
-    margin: 0 150px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -221,13 +296,12 @@ figure{
     flex-shrink: 0;
     background: #f4fbff;
     margin-top: 50px;
+    max-width: 90vw;
 }
 
 .organ-textContainer{
     margin: 20px 40px;
-    margin-top: -40px;
     background-color: white;
-    position: relative;
     padding: 20px;
     text-align: center;
 }
@@ -246,6 +320,7 @@ figure{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .social-link{
@@ -257,11 +332,7 @@ figure{
 }
 
 .social{
-    margin-right: 20px;
-}
-
-.form-email{
-    margin-left: 20px;
+    margin: 20px;
 }
 
 .social-link.facebook{
@@ -270,6 +341,10 @@ figure{
 
 .social-link.instagram{
     background-image: url('fotos/instagram.svg');
+}
+
+.form-email{
+    margin-left: 20px;
 }
 
 .form-email input{
@@ -304,27 +379,57 @@ figure{
     height: 40px;
     margin: 0;
     padding: 10px;
+    width: 100%;
 }
  .footer p{
      margin: 0;
      font-family: 'Lato', sans-serif;
  }
 
+ @media screen and (max-width: 1023px) {
+    
+   } 
+
  @media screen and (max-width: 767px) {
-     .header {
-         height: auto;
-         display: block;
-         text-align: center;
-        }
-
-        .nav-logo{
-            display: inline;
-        }
-
-     .header li{
-         margin-bottom: 5px;
-         align-items: center;
-         text-align: center;
-         display: flex;
+    .header ol {
+        display: block;
      }
+    .header ol li{
+        height: 2em;
+     }
+
+    .news-container{
+        display: block;
     }
+
+    .news-section,
+    .news-date,
+    .news-url{
+        font-size: 4vw;
+    }
+    .news-details{
+        font-size: 1vw;
+        width: 100%;
+     }
+     .news-imageContainer{
+         text-align: start;
+     }
+    } 
+
+@media screen and (max-width: 480px) {
+       } 
+
+@media screen and (max-width: 320px) {
+        
+       } 
+/*
+@media screen and (min-width: 768px) {
+    .news-section,
+    .news-date,
+    .news-url{
+        font-size: 1.3vw;
+    }
+    .news-title{
+        font-size: 2vw;
+     }
+       } 
