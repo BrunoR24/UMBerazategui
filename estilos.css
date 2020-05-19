@@ -2,6 +2,11 @@ html{
     scroll-behavior: smooth;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
@@ -66,6 +71,31 @@ figure{
     background-color: green;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.5)), url(fotos/imagenbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .hero-oneSC {
+    top: 0;
+    position: absolute;
+    width: 60%;
+    background-color: black;
+    height: 100vh;
+    clip-path: polygon(0 0, 60vw 0, 40vw 100vh, 0 100vh);
+    z-index: 1;
+    background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(fotos/sc.jpg);
+      background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .hero-twoSC {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    background-color: green;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.5)), url(fotos/consejomain.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -295,7 +325,7 @@ figure{
     overflow: hidden;
     flex-shrink: 0;
     background: #f4fbff;
-    margin-top: 50px;
+    margin: 50px;
     max-width: 90vw;
 }
 
@@ -304,6 +334,8 @@ figure{
     background-color: white;
     padding: 20px;
     text-align: center;
+    position: relative;
+    margin-top: -40px;
 }
 
 .organ-image{
@@ -315,7 +347,7 @@ figure{
 .contact{
     background-color: #2A8CC8;
     color: white;
-    height: 180px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -366,7 +398,7 @@ figure{
     color: white;
     width: 100px;
     border-radius: 5px;
-    margin-top: 10px;
+    margin: 10px;
 }
 
 .form-email h3{
@@ -422,14 +454,21 @@ figure{
 @media screen and (max-width: 320px) {
         
        } 
-/*
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .news-section,
     .news-date,
     .news-url{
         font-size: 1.3vw;
     }
     .news-title{
-        font-size: 2vw;
+        font-size: 1.5vw;
+     }
+     .news-description{
+         font-size: 1.4vw
+     }
+     a,
+     h4,
+     p{
+         font-size: 1vw;
      }
        } 
