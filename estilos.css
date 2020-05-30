@@ -14,6 +14,8 @@ body {
      box-sizing: border-box;
 }
 
+/* MENU */
+
 ul,
 ol{
     margin: 0;
@@ -35,6 +37,86 @@ figure{
     flex-wrap: wrap;
     border-bottom: 1px solid gray;
     background-color: white;
+}
+
+.menu {
+    height: inherit;
+}
+
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+.header ol li{
+    flex: 1;
+    align-items: center;
+    text-align: center;
+}
+
+.info-button{
+    font-family: 'Lato', Helvetica, sans-serif;
+    color:#2A8CC8;
+    font-weight: 600;
+    text-decoration: none;
+    height: inherit;
+    align-items: center;
+    margin: 0 50px;
+    text-transform: uppercase;
+ 
+}
+
+.noticias-button{
+    font-family: 'Lato', Helvetica, sans-serif;
+    color:#49AC7B;
+    font-weight: 600;
+    text-decoration: none;
+    height: inherit;
+    align-items: center;
+    margin: 0 50px;
+    text-transform: uppercase;
+ 
+}
+
+.nosotros-button{
+    font-family: 'Lato', Helvetica, sans-serif;
+    color:#524482;
+    font-weight: 600;
+    text-decoration: none;
+    height: inherit;
+    align-items: center;
+    margin: 0 50px;
+    text-transform: uppercase;
+ 
+}
+
+.contacto-button{
+    font-family: 'Lato', Helvetica, sans-serif;
+    color:#D94F42;;
+    font-weight: 600;
+    text-decoration: none;
+    height: inherit;
+    align-items: center;
+    margin: 0 50px;
+    text-transform: uppercase;
+}
+
+.nav-logo{
+    margin: 0 40px;
+    height: inherit;
+    width: 100px; 
+}
+
+.social-logo.instagram{
+    margin: 0 40px;
+    height: 2em;
+    width: 2em; 
+}
+
+.social-logo.facebook{
+    margin: 0 40px;
+    height: 2em;
+    width: 2em; 
 }
 
 /* Hero */
@@ -115,146 +197,104 @@ figure{
     font-weight: 700;
   }
 
-/* hero end */
+/* SOBRE NOSOTROS */
 
-.menu {
-    height: inherit;
+
+.about-us{
+    font-family: 'Lato', sans-serif;
+    margin: 50px;
 }
 
-.header ol{
-    display: flex;
-    height: inherit;
-}
-
-.header ol li{
-    flex: 1;
-    align-items: center;
+.um-about{
     text-align: center;
 }
 
-.info-button{
-    font-family: 'Lato', Helvetica, sans-serif;
-    color:#2A8CC8;
-    font-weight: 600;
-    text-decoration: none;
-    height: inherit;
-    align-items: center;
-    margin: 0 50px;
-    text-transform: uppercase;
- 
-}
-
-
-
-
-
-.noticias-button{
-    font-family: 'Lato', Helvetica, sans-serif;
-    color:#49AC7B;
-    font-weight: 600;
-    text-decoration: none;
-    height: inherit;
-    align-items: center;
-    margin: 0 50px;
-    text-transform: uppercase;
- 
-}
-
-.nosotros-button{
-    font-family: 'Lato', Helvetica, sans-serif;
-    color:#524482;
-    font-weight: 600;
-    text-decoration: none;
-    height: inherit;
-    align-items: center;
-    margin: 0 50px;
-    text-transform: uppercase;
- 
-}
-
-.contacto-button{
-    font-family: 'Lato', Helvetica, sans-serif;
-    color:#D94F42;;
-    font-weight: 600;
-    text-decoration: none;
-    height: inherit;
-    align-items: center;
-    margin: 0 50px;
+h2,
+h3{
     text-transform: uppercase;
 }
-
-.nav-logo{
-    margin: 0 40px;
-    height: inherit;
-    width: 100px; 
+.value-title,
+.value-image,
+.values{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
 
-.social-logo.instagram{
-    margin: 0 40px;
-    height: 2em;
-    width: 2em; 
-}
-
-.social-logo.facebook{
-    margin: 0 40px;
-    height: 2em;
-    width: 2em; 
+.value,
+.valueTitle
+.valueImage{
+    margin: 0 5vw;
 }
 
 /*
-.bghero{
-    background-image:url('fotos/bghero.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 0 50px;
-    
-}
-
-.hero{
-    color: rgba(255, 255, 255, 0.815);
-    max-height: 700px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 0px;
-    background-color: rgba(0, 0, 0, 0.6);
-    flex-wrap: wrap;
-}
-*/
-.main-title{
-    font-family: 'Lato', Helvetica, sans-serif;
-    font-size: 50px;
-    padding: 0 0 250px 100px;
+.about-us h2{
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .about-us{
-    background: #f4fbff;
-    margin: 0 150px;
+    margin: 0 5vw;
+    background-color: white;
+    font-family: 'Lato';
+    margin: auto 50px;
 }
 
-.about-usContainer{
-    font-size: 20px;
-    font-family: 'Lato', sans-serif;
-    margin-top: 100px;
-    margin-bottom: 50px;
+.value-title,
+.values{
     display: flex;
+    flex-shrink: 1;
     justify-content: space-around;
-    align-items: center;
-    border: 1px solid grey;
-    border-radius: 25px;
-    padding: 20px;
 }
 
-.about-usTitle{
-    margin-bottom: 20px;
-    font-family: 'Lato', sans-serif;
+.about-us p{
+    font-size: 1em;
+    text-align: justify;
+    margin: 1.5vw;
+}
+*/
+
+.information-title{
+    text-align: center;
+    font-family: 'Lato', Helvetica, sans-serif;
     text-transform: uppercase;
-    font-weight: 600;
+    font-size: 20px;
+    margin: 50px 0;
 }
 
-.about-us-imageContainer{
-    padding: 20px 30px;
+
+.information{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+.organ{
+    border: 1px solid gray;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: #f4fbff;
+    margin: 1.5vw;
+    max-width: 90vw;
+}
+
+.organ-textContainer{
+    margin: 20px 40px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-top: -40px;
+}
+
+.organ-image{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* NOTICIAS */
 
 .news-maintitle{
     text-transform: uppercase;
@@ -304,45 +344,7 @@ figure{
     width: 50%;
 }
 
-.information-title{
-    text-align: center;
-    font-family: 'Lato', Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-size: 20px;
-    margin: 50px 0;
-}
-
-
-.information{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.organ{
-    border: 1px solid gray;
-    border-radius: 10px;
-    overflow: hidden;
-    flex-shrink: 0;
-    background: #f4fbff;
-    margin: 50px;
-    max-width: 90vw;
-}
-
-.organ-textContainer{
-    margin: 20px 40px;
-    background-color: white;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    margin-top: -40px;
-}
-
-.organ-image{
-    width: 400px;
-    height: 200px;
-    object-fit: cover;
-}
+/* CONTACTO */
 
 .contact{
     background-color: #2A8CC8;
@@ -405,6 +407,8 @@ figure{
     font-family: 'Lato', sans-serif;
 }
 
+/* FOOTER */
+
 .footer{
     background-color: rgb(22, 20, 20);
     color: whitesmoke;
@@ -417,6 +421,8 @@ figure{
      margin: 0;
      font-family: 'Lato', sans-serif;
  }
+
+/*RESPONSIVE DESIGNE*/
 
  @media screen and (max-width: 1023px) {
     
@@ -454,7 +460,7 @@ figure{
 @media screen and (max-width: 320px) {
         
        } 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1441px) {
     .news-section,
     .news-date,
     .news-url{
