@@ -18,20 +18,21 @@
 </head>
 
 <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
         <a href="index.html"><img src='fotos/uniendometas.jpg' alt="logo" class="nav-logo"></a>
         <nav class="menu">
             <ol>
-                <li><a href="#info" class="info-button">historia</a></li>
-                <li><a href="#sobrenosotros" class="nosotros-button">general</a></li>
-                <li><a href="#noticias" class="noticias-button">dinamica</a></li>
-                <li><a href="#contacto" class="contacto-button">archivos</a></li>
+                <li><a href="#sobrenosotros" class="nosotros-button">Nosotros</a></li>
+                <li><a href="#info" class="info-button">Información</a></li>
+                <li><a href="#noticias" class="noticias-button">Noticias</a></li>
+                <li><a href="#contacto" class="contacto-button">Contacto</a></li>
+                <li><a href="https://www.facebook.com/pages/category/Regional-Website/Uniendo-Metas-Berazategui-188138221239678/"
+                        target="_BLANK"><img src='fotos/facebook.svg' alt="logo" class="social-logo facebook"></a></li>
+                <li><a href="https://www.instagram.com/uniendometasberazategui/?hl=es-la" target="_BLANK"><img
+                            src='fotos/instagram.svg' alt="logo" class="social-logo instagram"></a></li>
             </ol>
         </nav>
-        <!--<div class="media">
-                <a href="https://www.facebook.com/pages/category/Regional-Website/Uniendo-Metas-Berazategui-188138221239678/" target="_BLANK"><img src='fotos/facebook.svg' alt="logo" class="social-logo facebook"></a>
-                <a href="https://www.instagram.com/uniendometasberazategui/?hl=es-la" target="_BLANK"><img src='fotos/instagram.svg' alt="logo" class="social-logo instagram"></a>
-            </div>-->
     </header>
     <div class='hero'>
         <div class="hero-oneAG"></div>
@@ -40,13 +41,12 @@
                 decidiendo</span></h1>
     </div>
     <section class="rules">
-        <div class="historia">
+        <div class="general">
+            <h3>GENERAL</h3>  
             <img src="fotos/uniendometas.jpg">
-            <p class="rules-text">
-                <b>
-                HISTORIA  
-                </b>
-                <br><br>
+            <p class="rules-text" id="info">
+                
+                
                 Luego de la Segunda Guerra Mundial se propuso una estructura para una organización mundial, donde se
                 incluiría el Consejo de Seguridad. En 1945 se acordó en procedimiento de voto en la Conferencia de
                 Yalta​ y posteriormente se convocó la Conferencia de San Francisco, donde se aprobó la Carta de las
@@ -59,30 +59,9 @@
                 necesarios para aprobar una decisión.
             </p>
         </div>
-        <div class="general">
-            <p class="rules-text">
-                <b>
-                GENERAL  
-                </b>
-                <br><br>
-                El Consejo de Seguridad se compone de quince Miembros de las Naciones Unidas. La
-                República Popular de China, La República Francesa, La Federación de Rusia, El Reino
-                Unido de la Gran Bretaña e Irlanda del Norte y los Estados Unidos de América son
-                Miembros Permanentes del Consejo de Seguridad. Diez Miembros denominados no
-                permanentes son electos por la Asamblea General por períodos de dos años.
-                La composición del Consejo de Seguridad es muy importante ya que les permitirá a las
-                Delegaciones saber con anterioridad al Encuentro Uniendo Metas con qué países
-                tienen intereses afines para trabajar y con quienes no, lo que a su vez facilitará las
-                negociaciones.
-            </p>
-            <img src="fotos/uniendometas.jpg">
-        </div>
         <div class="dinamica">
-            <p>
-                <b>
-                    DINAMICA  
-                </b>
-                <br><br>
+            <h3>DINAMICA</h3>  
+            <p class="rules-text" id="noticias"> 
                 El Consejo de Seguridad se compone de quince Miembros de las Naciones Unidas. La República Popular de China, La República Francesa, La Federación de Rusia, El Reino Unido de la Gran Bretaña e Irlanda del Norte y los Estados Unidos de América son Miembros Permanentes del Consejo de Seguridad. Diez Miembros denominados no permanentes son electos por la Asamblea General por períodos de dos años. La composición del Consejo de Seguridad es muy importante ya que les permitirá a las Delegaciones saber con anterioridad al Encuentro Uniendo Metas con qué países tienen intereses afines para trabajar y con quienes no, lo que a su vez facilitará las negociaciones.
             </p>
             <img src="fotos/uniendometas.jpg">
@@ -94,19 +73,60 @@
     </section>
     <section class="contact" id="contacto">
         <form action="/contactos/" class="form-email">
-            <h3>¿Nos ponemos en contacto?</h3>
+            <h3>¿Queres recibir noticias del modelo?</h3>
             <label for="email"></label>
             <input type="text" placeholder="Dejame tu email">
             <button>Enviar</button>
         </form>
-        <div class="social">
-            <a href="https://www.facebook.com/pages/category/Regional-Website/Uniendo-Metas-Berazategui-188138221239678/"
-                target="_BLANK" class="social-link facebook"></a>
-            <a href="https://www.instagram.com/uniendometasberazategui/?hl=es-la" target="_BLANK"
-                class="social-link instagram"></a>
+        <div class="data">
+            <div class="data-text">
+                <img src="fotos/mail.svg" class="data-image">
+                <p>umberazategui@conciencia.org</p></a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/uniendometasberazategui/?hl=es-la" target="_BLANK"
+                    class="data-text"><img src="fotos/instagram.svg" class="data-image">
+                    <p>@uniendometasberazategui</p>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/pages/category/Regional-Website/Uniendo-Metas-Berazategui-188138221239678/"
+                    target="_BLANK" class="data-text"><img src="fotos/facebook.svg" class="data-image">
+                    <p>Uniendo Metas Berazategui</p>
+                </a>
+            </div>
         </div>
     </section>
     <footer class="footer">
-        <p>Copyright: Uniendo Metas, Conciencia</p>
+        <p>© Copyright: Uniendo Metas, Conciencia</p>
     </footer>
+    <script>
+    
+        const ipad = window.matchMedia('screen and (max-width: 767px)')
+        const menu = document.querySelector('.menu');
+
+        const burgerButton = document.querySelector('#burger-menu');
+
+  
+  
+        ipad.addListener(validation)
+  
+        function validation(event) {
+          if (event.matches) {
+            burgerButton.addEventListener('click', hideShow)
+          } else {
+            burgerButton.removeEventListener('click', hideShow)
+          }
+        }
+        validation(ipad);
+  
+  
+        function hideShow() {
+          if (menu.classList.contains('is-active')) {
+            menu.classList.remove('is-active');
+          } else {
+            menu.classList.add('is-active');
+          }
+        }
+      </script>
 </body>
