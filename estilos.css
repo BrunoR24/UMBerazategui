@@ -424,7 +424,33 @@ figure{
     background-repeat: no-repeat;
     background-position: center;
   }
-  
+
+  .hero-oneUM {
+    top: 0;
+    position: absolute;
+    width: 60%;
+    background-color: black;
+    height: 100vh;
+    clip-path: polygon(0 0, 60vw 0, 40vw 100vh, 0 100vh);
+    z-index: 1;
+    background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(fotos/sede.jpg);
+      background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .hero-twoUM {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    background-color: green;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.5)), url(fotos/jovenes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   .header-title {
     z-index: 2;
     position: absolute;
