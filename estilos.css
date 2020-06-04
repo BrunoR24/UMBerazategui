@@ -633,6 +633,7 @@ h3{
 
 .news-description{
     font-size: 20px;
+
 }
 
 .news-image{
@@ -893,13 +894,13 @@ h3{
      .form-email {
       text-align: center;
   }
+  .header-title{
+    font-size: medium;
+  }
     } 
 
 
 @media screen and (max-width: 480px) {
-  .header-title{
-    font-size: medium;
-  }
        } 
 
 @media screen and (max-width: 320px) {
@@ -909,13 +910,10 @@ h3{
     .news-section,
     .news-date,
     .news-url{
-        font-size: 1.3vw;
+        font-size: 1vw;
     }
-    .news-title{
-        font-size: 1.5vw;
-     }
      .news-description{
-         font-size: 1.4vw
+         font-size: 1vw
      }
      a,
      h4,
