@@ -753,14 +753,15 @@ h3{
 .dinamica h3{
   width: 100%;
   text-align: center;
+  margin: 1.5em;
 }
 
 .testimony{
-  max-width: 60%;
+  width: 60%;
 }
 
 .archivos{
-  padding: 3vw 0 1vw 11vw;
+  padding: 2em;
 }
 
 .rules b{
@@ -784,10 +785,11 @@ h3{
     font-size: large;
   }
 
-  .historia img,
   .general img,
   .dinamica img{
-    width: 10em;
+    width: 15em;
+    margin: 1em;
+
   }
 
 .dinamica{
@@ -804,7 +806,7 @@ h3{
 }
 
 .archivos img{
-  width: 10vw;
+  width: 5em;
 }
 
 .burger-button {
@@ -895,7 +897,7 @@ h3{
       text-align: center;
   }
   .header-title{
-    font-size: medium;
+    font-size: small;
   }
     } 
 

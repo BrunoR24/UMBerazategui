@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Uniendo Mestas Region 4</title>
+    <title>Uniendo Mestas Berazategui</title>
     <meta name="keywords"
         content="Consejo de Seguridad, onu, naciones unidas, modelos, uniendo metas, conciencia, berazategui">
     <meta name="description"
@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="">
     <link rel="stylesheet" type="text/css" href="estilos.css">
-    <link rel="icon" type="image/jpg" href="fotos/uniendometas.jpg">
+    <link rel="icon" type="image/jpg" href="fotos/uniendometas.png">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital@1&family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 </head>
@@ -31,37 +31,43 @@
                         target="_BLANK"><img src='fotos/facebook.svg' alt="logo" class="social-logo facebook"></a></li>
                 <li><a href="https://www.instagram.com/uniendometasberazategui/?hl=es-la" target="_BLANK"><img
                             src='fotos/instagram.svg' alt="logo" class="social-logo instagram"></a></li>
+                <li><a href="https://twitter.com/BerazateguiUm" target="_BLANK"><img src='fotos/twitter.svg' alt="logo"
+                            class="social-logo twitter"></a></li>
+                <li><a href="https://www.youtube.com/channel/UC_BvXq0PaMSEi49OlKklmYw" target="_BLANK"><img
+                            src='fotos/youtube.svg' alt="logo" class="social-logo youtube"></a></li>
             </ol>
         </nav>
     </header>
     <div class='hero'>
         <div class="hero-oneSE"></div>
         <div class="hero-twoSE"></div>
-        <h1 class="header-title"><span class="header-primary">Embajadores</span><span class="header-sub">ACORDANDO EL FUTURO</span></h1>
+        <h1 class="header-title"><span class="header-primary">Embajadores</span><span class="header-sub">ACORDANDO EL
+                FUTURO</span></h1>
     </div>
     <section class="rules">
-        <div class="general">
-            <h3>GENERAL</h3>  
-            <img src="fotos/uniendometas.jpg">
-            <p class="rules-text" id="info">
-                
-                
-                Luego de la Segunda Guerra Mundial se propuso una estructura para una organización mundial, donde se
-                incluiría el Consejo de Seguridad. En 1945 se acordó en procedimiento de voto en la Conferencia de
-                Yalta​ y posteriormente se convocó la Conferencia de San Francisco, donde se aprobó la Carta de las
-                Naciones Unidas.
-                El Consejo de Seguridad de las Naciones Unidas realizó su primera sesión el 17 de enero de 1946 en
-                Church House, Londres. Desde esa fecha, el Consejo se ha reunido permanentemente realizando encuentros
-                en diferentes ciudades, desde París hasta Adís Abeba.
-                En 1963 se aprueban los cambios a los artículos 23 y 27 de la Carta de las Naciones Unidas, aumentando
-                de seis a diez el número de miembros no permanentes y aumentando de siete a nueve el número de votos
-                necesarios para aprobar una decisión.
+        <div class="general" id="info">
+            <h3>GENERAL</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/r6Ibr0GZUrg" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p class="rules-text">
+                <strong>La Sala de Tratados Internacionales</strong> es el recinto donde se desarrolla la simulación de
+                un órgano de las Naciones Unidas
+                , en el cual los embajadores tiene la posiblidad de tratar temas de agenda de sus respectivos estados
+                que no sean debatidos en el resto de
+                los órganos y comisiones representados en el Encuentro Uniendo Metas.
             </p>
         </div>
-        <div class="dinamica">
-            <h3>DINAMICA</h3>  
-            <p class="rules-text" id="sobrenosotros"> 
-                El Consejo de Seguridad se compone de quince Miembros de las Naciones Unidas. La República Popular de China, La República Francesa, La Federación de Rusia, El Reino Unido de la Gran Bretaña e Irlanda del Norte y los Estados Unidos de América son Miembros Permanentes del Consejo de Seguridad. Diez Miembros denominados no permanentes son electos por la Asamblea General por períodos de dos años. La composición del Consejo de Seguridad es muy importante ya que les permitirá a las Delegaciones saber con anterioridad al Encuentro Uniendo Metas con qué países tienen intereses afines para trabajar y con quienes no, lo que a su vez facilitará las negociaciones.
+        <div class="dinamica" id="sobrenosotros">
+            <h3>DINAMICA</h3>
+            <p class="rules-text">
+                El Consejo de Seguridad se compone de quince Miembros de las Naciones Unidas. La República Popular de
+                China, La República Francesa, La Federación de Rusia, El Reino Unido de la Gran Bretaña e Irlanda del
+                Norte y los Estados Unidos de América son Miembros Permanentes del Consejo de Seguridad. Diez Miembros
+                denominados no permanentes son electos por la Asamblea General por períodos de dos años. La composición
+                del Consejo de Seguridad es muy importante ya que les permitirá a las Delegaciones saber con
+                anterioridad al Encuentro Uniendo Metas con qué países tienen intereses afines para trabajar y con
+                quienes no, lo que a su vez facilitará las negociaciones.
             </p>
             <img src="fotos/uniendometas.jpg">
         </div>
@@ -100,32 +106,32 @@
         <p>© Copyright: Uniendo Metas, Conciencia</p>
     </footer>
     <script>
-    
+
         const ipad = window.matchMedia('screen and (max-width: 767px)')
         const menu = document.querySelector('.menu');
 
         const burgerButton = document.querySelector('#burger-menu');
 
-  
-  
+
+
         ipad.addListener(validation)
-  
+
         function validation(event) {
-          if (event.matches) {
-            burgerButton.addEventListener('click', hideShow)
-          } else {
-            burgerButton.removeEventListener('click', hideShow)
-          }
+            if (event.matches) {
+                burgerButton.addEventListener('click', hideShow)
+            } else {
+                burgerButton.removeEventListener('click', hideShow)
+            }
         }
         validation(ipad);
-  
-  
+
+
         function hideShow() {
-          if (menu.classList.contains('is-active')) {
-            menu.classList.remove('is-active');
-          } else {
-            menu.classList.add('is-active');
-          }
+            if (menu.classList.contains('is-active')) {
+                menu.classList.remove('is-active');
+            } else {
+                menu.classList.add('is-active');
+            }
         }
-      </script>
+    </script>
 </body>
